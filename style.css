@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: black;
+    display: flex;
+    height: 100VH;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/backroundCrazy.gif);;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+
+@
+
+div{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.rotation{
+    animation: rotation 5s linear infinite;
+}
+
+.rotation2{
+    animation: rotation 10s linear infinite;
+}
+
+.rotation3{
+    animation: rotation 15s linear infinite;
+}
+
+.rotation4{
+    animation: rotation 20s linear infinite;
+}
+.rotation5{
+    animation: rotation 30s linear infinite;
+}
+.cartman{
+    background-image: url(/img/Eric-cartman.webp);
+    animation: rotation 5s linear infinite reverse;
+    top: 225px;
+}
+
+.kyle{
+    background-image: url(/img/KyleBroflovski.png);
+    top: 130px;
+    animation-duration: 3S;
+    animation: rotation 5s linear infinite;
+    
+}
+
+.ike{
+    background-image: url(/img/Ike_2-0.png);
+    top:75px;
+    transform: scale(0.5);
+    right: -25px;
+}
+.stan{
+    background-image: url(/img/StanMarsh.png);
+    top:400px;
+   animation: rotation 5s linear infinite;
+}
+.hankey{
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/Mr._Hankey_transparent.webp);
+    top:150px;
+    animation: rotation 2s linear infinite;
+}
+.jesus{
+    width: 150px;
+    height: 150px;
+    background-image: url(/img/jesus.gif);
+    background-size: cover;
+    animation: rotation 10s linear infinite;
+}
+
+.sky{
+    background-image: url(/img/Gary-0.webp);
+    top: 600px;
+    animation: rotation 4s linear infinite reverse;
+}
+.chef{
+    width: 200px;
+    height: 200px;
+    background-image: url(/img/Chef.webp);
+    animation: rotation 6s linear infinite ;
+    top: 700px;
+}
+.reverse{
+    rotate: 180deg;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes translate{
+    from{
+        top: 0;
+    }
+
+    to{
+        top: 250px;
+    }
+}
